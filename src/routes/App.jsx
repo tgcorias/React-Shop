@@ -12,9 +12,14 @@ import Checkout from '@pages/Checkout';
 import Orders from '@pages/Orders';
 import NotFound from '@pages/NotFound';
 import '@styles/global.css';
+import AppContext from '@context/AppContext';
+import useInitialState from '@hooks/useInitialState';
 
 const App = () => {
+
+	const InitialState = useInitialState(); 
 	return (
+		<AppContext.Provider value={InitialState} >
 		<BrowserRouter>
 			<Layout>
 				<Switch>
@@ -31,6 +36,7 @@ const App = () => {
 				</Switch>
 			</Layout>
 		</BrowserRouter>
+		</AppContext.Provider>
 	);
 }
 
