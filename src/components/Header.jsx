@@ -23,29 +23,29 @@ const Header = () => {
 				<img src={logo} alt="logo" className="nav-logo" />
 				<ul>
 					<li>
-						<a href="/">All</a>
+						<a href="/">Todo</a>
 					</li>
 					<li>
-						<a href="/">Clothes</a>
+						<a href="/">Ropa</a>
 					</li>
 					<li>
-						<a href="/">Electronics</a>
+						<a href="/">Electrónica</a>
 					</li>
 					<li>
-						<a href="/">Furnitures</a>
+						<a href="/">Cosas</a>
 					</li>
 					<li>
-						<a href="/">Toys</a>
+						<a href="/">Juguetes</a>
 					</li>
 					<li>
-						<a href="/">Others</a>
+						<a href="/">Más</a>
 					</li>
 				</ul>
 			</div>
 			<div className="navbar-right">
 				<ul>
 					<li className="navbar-email" onClick={handleToggle}>
-						platzi@example.com
+						Usuario Ejemplo
 					</li>
 
 					<li  className="navbar-shopping-cart"
